@@ -10,14 +10,36 @@
 */
 int fizzbuzz(int n)
 {
-
+  int i;
+  for (i = 1; i < n; i++)
+  {
+    //number divisble by 3 and 5
+    // always be divisible by 15
+    if (i % 15 == 0)
+    {
+      printf("FizzBuzz\t");
+    }
+    else if (i % 3 == 0)
+    {
+      printf("Fizz\t");
+    }
+    else if (i % 5 == 0)
+    {
+      printf("Buzz\t");
+    }
+    else
+    {
+      printf("%d\t", i);
+    }
+  }
+  return 0;
 }
 
 #ifndef TESTING
 int main(void)
 {
-    fizzbuzz(20);
+  fizzbuzz(20);
 
-    return 0;
+  return 0;
 }
 #endif
