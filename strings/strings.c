@@ -22,10 +22,15 @@ int string_length(char *s)
       enough space for the reversed string. don't forget to terminate
       the reversed string with a null character. return the rv array.
   */
-char *reverse_string(char *rv, char *s)
+char *reverse_string(char rv[], char s[])
 {
-  // char *begin = s;
-  // char *begin = s;
+  int place = string_length(s);
+  for (int i = 0; i < place; i++)
+  {
+    rv[i] = s[place - 1];
+    place--;
+  }
+  return rv;
 }
 #ifndef testing
 int main(void)
