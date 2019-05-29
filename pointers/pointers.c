@@ -1,5 +1,5 @@
 #include <stdio.h>
-
+#include <string.h>
 /*
     Example call:
     char buffer[1024];
@@ -13,6 +13,12 @@
 // also make sure x points to a null terminator at it ends to terminate it properly.
 void string_copy(char *x, char *y)
 {
+  int len = strlen(y);
+  for (int i = 0; i < len; i++)
+  {
+    x[i] = y[i];
+  }
+  x[len] = '\0';
 }
 
 /*
