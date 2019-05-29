@@ -24,10 +24,14 @@ int string_length(char *s)
   */
 char *reverse_string(char rv[], char s[])
 {
+  // length of strings
   int place = string_length(s);
+  // loop through the length of string
   for (int i = 0; i < place; i++)
   {
+    // assign reversed to last num
     rv[i] = s[place - 1];
+    // decrement place every iteration
     place--;
   }
   return rv;
