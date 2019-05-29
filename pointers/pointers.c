@@ -31,6 +31,14 @@ void string_copy(char *x, char *y)
 */
 char *find_char(char *str, int c)
 {
+  for (int i = 0; i < strlen(str); i++)
+  {
+    if (str[i] == c)
+    {
+      return &str[i];
+    }
+  }
+  return NULL;
 }
 
 /*
@@ -43,6 +51,10 @@ char *find_char(char *str, int c)
 */
 char *find_string(char *haystack, char *needle)
 {
+  printf("h and n %x %x\n", haystack, needle);
+  // for (int i = 0; i < strlen(haystack); i++) {
+  //   //
+  // }
 }
 
 #ifndef TESTING
