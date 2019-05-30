@@ -39,8 +39,8 @@ This sprint is structured very much like how your introductory JavaScript sprint
 
   - [x] fizzbuzz <tuesday>
   - [x] strings  <tuesday> 
-  - [ ] pointers
-  - [ ] malloc
+  - [x] pointers
+  - [] malloc
   - [ ] structs
 
   **Stretch Goal Problems**

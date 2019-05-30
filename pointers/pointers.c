@@ -51,10 +51,15 @@ char *find_char(char *str, int c)
 */
 char *find_string(char *haystack, char *needle)
 {
-  printf("h and n %x %x\n", haystack, needle);
-  // for (int i = 0; i < strlen(haystack); i++) {
-  //   //
-  // }
+  for (int i = 0; i < strlen(haystack); i++)
+  {
+    printf("--> %x\n", haystack[i]);
+    if (needle[i] == '\0')
+    {
+      return &haystack[i];
+    }
+  }
+  return NULL;
 }
 
 #ifndef TESTING
